@@ -66,121 +66,91 @@
 									</p>
 								</header>
 
-<div class="slideshow-container">
-
-  <!-- Slide 1: Video Walkthrough Agenda -->
+<!-- Slideshow 1: PNG-only Slides -->
+<div class="slideshow-container" id="slideshow1">
+  <!-- Slide 1 -->
   <div class="slide" style="display: block;">
     <img src="https://raw.githubusercontent.com/thatTJguy/TJsPortfolio/main/images/Video_walkthrough_agenda.png"
-         alt="Video Walkthrough Agenda"
-         style="width:100%; height:550px;" />
+         alt="Video Walkthrough Agenda" style="width:100%; height:550px;" />
   </div>
-
-  <!-- Slide 2: Scenario -->
+  <!-- Slide 2 -->
   <div class="slide" style="display: none;">
     <img src="https://raw.githubusercontent.com/thatTJguy/TJsPortfolio/main/images/Scenario.png"
-         alt="Scenario"
-         style="width:100%; height:550px;" />
+         alt="Scenario" style="width:100%; height:550px;" />
   </div>
-
-  <!-- Slide 3: Global Chat Example -->
+  <!-- Slide 3 -->
   <div class="slide" style="display: none;">
     <img src="https://raw.githubusercontent.com/thatTJguy/TJsPortfolio/main/images/Global_Chat_Example.png"
-         alt="Global Chat Example"
-         style="width:100%; height:550px;" />
+         alt="Global Chat Example" style="width:100%; height:550px;" />
   </div>
-
-  <!-- Slide 4: Goal -->
+  <!-- Slide 4 -->
   <div class="slide" style="display: none;">
     <img src="https://raw.githubusercontent.com/thatTJguy/TJsPortfolio/main/images/Goal.png"
-         alt="Goal"
-         style="width:100%; height:550px;" />
+         alt="Goal" style="width:100%; height:550px;" />
   </div>
 
-  <!-- Navigation Buttons -->
+  <!-- Navigation -->
   <div class="slide-nav actions special">
-    <button onclick="changeSlide(-1)">Previous</button>
-    <button onclick="changeSlide(1)">Next</button>
+    <button onclick="changeSlide('slideshow1', -1)">Previous</button>
+    <button onclick="changeSlide('slideshow1', 1)">Next</button>
   </div>
 </div>
 
-<script>
-  let currentSlide = 0;
-  const slides = document.querySelectorAll('.slideshow-container .slide');
-  function changeSlide(n) {
-    slides[currentSlide].style.display = 'none';
-    currentSlide = (currentSlide + n + slides.length) % slides.length;
-    slides[currentSlide].style.display = 'block';
-  }
-</script>
-
-								
-  <div class="slideshow-container">
-
-  <!-- Slide 1: Front-End Agenda Image -->
-  <div class="slide" style="display: block;">
-    <img src="https://raw.githubusercontent.com/thatTJguy/TJsPortfolio/main/images/FrontEnd_Agenda.png" 
-         alt="Front-End Agenda" 
-         style="width:100%; height:auto;" />
-  </div>
-
-  <!-- Slide 2: First YouTube Video -->
+<!-- Slideshow 2: Mixed Media Slides -->
+<!--<div class="slideshow-container" id="slideshow2"> -->
+  <!-- Slide 1 -->
+ <!-- <div class="slide" style="display: block;">  -->
+ <!--   <img src="https://raw.githubusercontent.com/thatTJguy/TJsPortfolio/main/images/FrontEnd_Agenda.png"  -->
+   <!--      alt="Front-End Agenda" style="width:100%; height:auto;" />  -->
+<!--    </div> -->
+  <!-- Slide 2 -->
   <div class="slide" style="display: none;">
-    <iframe src="https://www.youtube.com/embed/iJlOqdncDSg" 
-            frameborder="0" 
-            allowfullscreen 
-            style="width:100%; height:720px;">
-    </iframe>
+    <iframe src="https://www.youtube.com/embed/iJlOqdncDSg"
+            frameborder="0" allowfullscreen style="width:100%; height:720px;"></iframe>
   </div>
-
-  <!-- Slide 3: CreateNew.png Image -->
+  <!-- Slide 3 -->
   <div class="slide" style="display: none;">
-    <img src="https://raw.githubusercontent.com/thatTJguy/TJsPortfolio/main/images/CreateNew.png" 
-         alt="Create New" 
-         style="width:100%; height:auto;" />
+    <img src="https://raw.githubusercontent.com/thatTJguy/TJsPortfolio/main/images/CreateNew.png"
+         alt="Create New" style="width:100%; height:auto;" />
   </div>
-
-  <!-- Slide 4: Second YouTube Video -->
+  <!-- Slide 4 -->
   <div class="slide" style="display: none;">
-    <iframe src="https://www.youtube.com/embed/HPBbv6GTa-o" 
-            frameborder="0" 
-            allowfullscreen 
-            style="width:100%; height:720px;">
-    </iframe>
+    <iframe src="https://www.youtube.com/embed/HPBbv6GTa-o"
+            frameborder="0" allowfullscreen style="width:100%; height:720px;"></iframe>
+  </div>
+  <!-- Slide 5 -->
+  <div class="slide" style="display: none;">
+    <img src="https://raw.githubusercontent.com/thatTJguy/TJsPortfolio/main/images/StatusAndRequests.png"
+         alt="Status and Requests" style="width:100%; height:auto;" />
+  </div>
+  <!-- Slide 6 -->
+  <div class="slide" style="display: none;">
+    <iframe src="https://www.youtube.com/embed/3MQJyT022Mg"
+            frameborder="0" allowfullscreen style="width:100%; height:720px;"></iframe>
   </div>
 
-<!-- Slide 5: StatusAndRequests.png Image -->
-<div class="slide" style="display: none;">
-	<img src="https://raw.githubusercontent.com/thatTJguy/TJsPortfolio/main/images/StatusAndRequests.png"
-		alt="Create New"
-		style="width:100%; height:auto;" />
-</div>
-	  
-<!-- Slide 6: Third YouTube Video -->
-<div class="slide" style="display: none;">
-	<iframe src="https://www.youtube.com/embed/3MQJyT022Mg"
-		frameborder="0"
-		allowfullscreen
-		style="width:100%; height:720px;">
-	</iframe>
-</div>
-
-
-  <!-- Navigation Buttons -->
+  <!-- Navigation -->
   <div class="slide-nav actions special">
-    <button onclick="changeSlide(-1)">Previous</button>
-    <button onclick="changeSlide(1)">Next</button>
-	  <br>
-	  
+    <button onclick="changeSlide('slideshow2', -1)">Previous</button>
+    <button onclick="changeSlide('slideshow2', 1)">Next</button>
   </div>
 </div>
 
+<!-- Unified Slideshow Script -->
 <script>
-  let currentSlide = 0;
-  const slides = document.querySelectorAll('.slideshow-container .slide');
-  function changeSlide(n) {
-    slides[currentSlide].style.display = 'none';
-    currentSlide = (currentSlide + n + slides.length) % slides.length;
-    slides[currentSlide].style.display = 'block';
+  const slideIndexes = {};
+
+  function changeSlide(containerId, n) {
+    const container = document.getElementById(containerId);
+    const slides = container.querySelectorAll('.slide');
+
+    if (!(containerId in slideIndexes)) {
+      slideIndexes[containerId] = 0;
+    }
+
+    slides[slideIndexes[containerId]].style.display = 'none';
+    slideIndexes[containerId] = (slideIndexes[containerId] + n + slides.length) % slides.length;
+    slides[slideIndexes[containerId]].style.display = 'block';
   }
 </script>
 
