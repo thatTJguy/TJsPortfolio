@@ -65,8 +65,55 @@
 										successfully standardizing the Multi-App Impact Tracking + Status Update processes.
 									</p>
 								</header>
-								<a href="https://app.powerbi.com/view?r=eyJrIjoiMDMzNTQ0NjMtNmI5Zi00ZTk1LWE0MDUtY2U4MTA5MTZmZjE1IiwidCI6ImQ2ZTYxNmQxLTJiMmMtNDkyZi05YTVlLTJiNmU1NDMwNTg0YyJ9&pageName=ReportSection"
-								class="image main"><center><img src="images/LHImage.jpg" alt="" style="text-align:center;width:825px;height:550px;" /></center></a>
+
+<div class="slideshow-container">
+
+  <!-- Slide 1: Video Walkthrough Agenda -->
+  <div class="slide" style="display: block;">
+    <img src="https://raw.githubusercontent.com/thatTJguy/TJsPortfolio/main/images/Video_walkthrough_agenda.png"
+         alt="Video Walkthrough Agenda"
+         style="width:100%; height:550px;" />
+  </div>
+
+  <!-- Slide 2: Scenario -->
+  <div class="slide" style="display: none;">
+    <img src="https://raw.githubusercontent.com/thatTJguy/TJsPortfolio/main/images/Scenario.png"
+         alt="Scenario"
+         style="width:100%; height:550px;" />
+  </div>
+
+  <!-- Slide 3: Global Chat Example -->
+  <div class="slide" style="display: none;">
+    <img src="https://raw.githubusercontent.com/thatTJguy/TJsPortfolio/main/images/Global_Chat_Example.png"
+         alt="Global Chat Example"
+         style="width:100%; height:550px;" />
+  </div>
+
+  <!-- Slide 4: Goal -->
+  <div class="slide" style="display: none;">
+    <img src="https://raw.githubusercontent.com/thatTJguy/TJsPortfolio/main/images/Goal.png"
+         alt="Goal"
+         style="width:100%; height:550px;" />
+  </div>
+
+  <!-- Navigation Buttons -->
+  <div class="slide-nav actions special">
+    <button onclick="changeSlide(-1)">Previous</button>
+    <button onclick="changeSlide(1)">Next</button>
+  </div>
+</div>
+
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.slideshow-container .slide');
+  function changeSlide(n) {
+    slides[currentSlide].style.display = 'none';
+    currentSlide = (currentSlide + n + slides.length) % slides.length;
+    slides[currentSlide].style.display = 'block';
+  }
+</script>
+
+								
   <div class="slideshow-container">
 
   <!-- Slide 1: Front-End Agenda Image -->
