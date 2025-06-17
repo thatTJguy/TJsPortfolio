@@ -54,7 +54,7 @@
 				<!-- Main -->
 					<div id="main">
 
-						 Featured Post 1
+						<!-- Featured Post 1-->
 							<article class="post featured">
 								<header class="major">
 									<span>Featured Project</span>
@@ -68,32 +68,41 @@
 								<a href="https://app.powerbi.com/view?r=eyJrIjoiMDMzNTQ0NjMtNmI5Zi00ZTk1LWE0MDUtY2U4MTA5MTZmZjE1IiwidCI6ImQ2ZTYxNmQxLTJiMmMtNDkyZi05YTVlLTJiNmU1NDMwNTg0YyJ9&pageName=ReportSection"
 								class="image main"><center><img src="images/LHImage.jpg" alt="" style="text-align:center;width:825px;height:550px;" /></center></a>
   <div class="slideshow-container">
-    <div class="slide" style="display: block;">
-      <iframe src="https://www.youtube.com/embed/example1" frameborder="0" allowfullscreen style="width:100%; height:360px;"></iframe>
-    </div>
-    <div class="slide" style="display: none;">
-      <img src="images/example-screenshot.png" alt="Screenshot" style="width:100%; height:auto;" />
-    </div>
-    <div class="slide" style="display: none;">
-      <iframe src="https://app.powerbi.com/view?r=example2" frameborder="0" allowfullscreen style="width:100%; height:360px;"></iframe>
-    </div>
-
-    <div class="slide-nav actions special">
-      <button onclick="changeSlide(-1)">Previous</button>
-      <button onclick="changeSlide(1)">Next</button>
-    </div>
+  <div class="slide" style="display: block;">
+    <img src="https://raw.githubusercontent.com/thatTJguy/TJsPortfolio/main/images/FrontEnd_Agenda.png" 
+         alt="Front-End Agenda" 
+         style="width:100%; height:auto;" />
+  </div>
+  <div class="slide" style="display: none;">
+    <iframe src="https://www.youtube.com/embed/iJlOqdncDSg" 
+            frameborder="0" 
+            allowfullscreen 
+            style="width:100%; height:360px;">
+    </iframe>
+  </div>
+  <div class="slide" style="display: none;">
+    <iframe src="https://app.powerbi.com/view?r=example2" 
+            frameborder="0" 
+            allowfullscreen 
+            style="width:100%; height:360px;">
+    </iframe>
   </div>
 
-  <script>
-    let currentSlide = 0;
-    const slides = document.querySelectorAll('.slideshow-container .slide');
-    function changeSlide(n) {
-      slides[currentSlide].style.display = 'none';
-      currentSlide = (currentSlide + n + slides.length) % slides.length;
-      slides[currentSlide].style.display = 'block';
-    }
-  </script>
+  <div class="slide-nav actions special">
+    <button onclick="changeSlide(-1)">Previous</button>
+    <button onclick="changeSlide(1)">Next</button>
+  </div>
+</div>
 
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.slideshow-container .slide');
+  function changeSlide(n) {
+    slides[currentSlide].style.display = 'none';
+    currentSlide = (currentSlide + n + slides.length) % slides.length;
+    slides[currentSlide].style.display = 'block';
+  }
+</script>
 
 								
 								<ul class="actions special">
